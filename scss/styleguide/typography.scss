@@ -2,29 +2,49 @@
 
 @mixin bodyText {
 
+    font-family: "Ringside Regular Office A", "Ringside Regular Office B";
+    font-style: normal;
+    font-weight: 400;
     font-size: 1.25rem;
     line-height: 1.55;
     font-style: normal;
     font-weight: 400;
     color: var(--black);
+
 }
 
 @mixin uppercase {
-    
+
 }
 
 
 h1 {
 
+    font-family: "Ringside Narrow A", "Ringside Narrow B";
+    font-style: italic;
+    font-weight: 800;
 }
 
 
 h2 {
 
+    font-family: "Knockout 70 A", "Knockout 70 B";
+    font-style: normal;
+    font-weight: 400;
 }
 
 h3 {
- 
+
+    font-family: "Knockout 50 A", "Knockout 50 B";
+    font-style: normal;
+    font-weight: 400;
+}
+
+h4 {
+
+    font-family: "Knockout 32 A", "Knockout 32 B";
+    font-style: normal;
+    font-weight: 400;
 }
 
 a {
