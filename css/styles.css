@@ -1,18 +1,202 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @use '../styleguide/breakpoints';
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss/home.scss 1:1     @use
- *   scss/styles.scss 11:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use '../styleguide/breakpoints';\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss/home.scss 1:1     @use\a   scss/styles.scss 11:1  root stylesheet";
+:root {
+  --black: #444;
+  --grey: #444;
+  --greybackground:rgba(184, 184, 185, 1);
 }
+
+h1 {
+  font-family: "Ringside Narrow A", "Ringside Narrow B";
+  font-style: italic;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: "Knockout 70 A", "Knockout 70 B";
+  font-style: normal;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "Knockout 50 A", "Knockout 50 B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin: 0 0 0.5rem 0;
+}
+
+h4, b {
+  font-family: "Ringside Regular Office A", "Ringside Regular Office B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75;
+  font-style: normal;
+  color: var(--black);
+  font-weight: 700;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 1px solid var(--black);
+}
+
+p, ul, li {
+  font-family: "Ringside Regular Office A", "Ringside Regular Office B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75;
+  font-style: normal;
+  color: var(--black);
+  margin-top: 0;
+  margin-bottom: 1.55rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+html {
+  position: relative;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+@media (min-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+main {
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.small_container, .small-container {
+  width: calc(100% - 2rem);
+  max-width: 740px;
+}
+
+.medium_container, .medium-container, .container.images {
+  width: calc(100% - 2rem);
+  max-width: 1120px;
+}
+@media screen and (min-width: 992px) {
+  .medium_container, .medium-container, .container.images {
+    width: calc(100% - 10rem);
+  }
+}
+
+.images_container {
+  margin: 3rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .images_container {
+    flex-direction: row;
+  }
+}
+.images_container > img {
+  max-width: 280px;
+  height: auto;
+  border-radius: 52%;
+}
+.images_container > img:first-of-type {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .images_container > img:first-of-type {
+    display: block;
+  }
+}
+
+.container.images {
+  margin: 1.5rem auto 3rem auto;
+}
+.container.images img {
+  width: 100%;
+  height: auto;
+}
+
+.flex_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .flex_row {
+    flex-direction: row;
+  }
+}
+
+#intro {
+  margin: 3rem auto 1.5rem auto;
+  justify-content: center;
+  align-items: center;
+}
+#intro h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  #intro h1 {
+    font-size: 9rem;
+  }
+}
+#intro h2 {
+  font-size: 2.2rem;
+  margin: 0 0 0.5rem 0;
+}
+@media (min-width: 768px) {
+  #intro h2 {
+    font-size: 3.2rem;
+  }
+}
+#intro p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
