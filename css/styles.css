@@ -14,6 +14,8 @@ h2 {
   font-family: "Knockout 70 A", "Knockout 70 B";
   font-style: normal;
   font-weight: 400;
+  font-size: 1.7rem;
+  margin: 0 0 0.5rem 0;
 }
 
 h3 {
@@ -38,8 +40,8 @@ p {
   font-family: "Ringside Regular Office A", "Ringside Regular Office B";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.55;
+  font-size: 1rem;
+  line-height: 1.75;
   font-style: normal;
   color: var(--black);
   margin-top: 0;
