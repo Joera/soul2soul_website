@@ -44,11 +44,11 @@ h3 {
     margin: 0 0 0.5rem 0;
 }
 
-h4 {
+h4, b {
 
-    font-family: "Knockout 32 A", "Knockout 32 B";
-    font-style: normal;
-    font-weight: 400;
+    @include bodyText;
+    font-weight: 700;
+
 }
 
 a {
@@ -57,11 +57,16 @@ a {
     border-bottom: 1px solid var(--black);
 }
 
-p {
+p, ul, li {
 
     @include bodyText;
     margin-top: 0;
     margin-bottom: 1.55rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 em {
