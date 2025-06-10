@@ -35,6 +35,13 @@ a {
 }
 
 p {
+  font-family: "Ringside Regular Office A", "Ringside Regular Office B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  font-style: normal;
+  color: var(--black);
   margin-top: 0;
   margin-bottom: 1.55rem;
 }
@@ -151,6 +158,20 @@ main {
   .flex_row {
     flex-direction: row;
   }
+}
+
+#intro {
+  margin: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+#intro h1 {
+  font-size: 9rem;
+  margin: 0;
+}
+#intro h2 {
+  font-size: 3.2rem;
+  margin: 0 0 0.5rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
