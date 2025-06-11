@@ -22,8 +22,10 @@ const safeAddress = "0xd065d8C47994cAC57e49785aCEE04FcA495afac4";
 const epk = process.env.PRIVATE_KEY_UNAMORE || process.env.PRIVATE_KEY || "";
 const SELECTED_LIT_NETWORK = LIT_NETWORK.Datil;
 
+const dev = true;
+
 const main = async () => {
-  const protocolInfo: any = await getProtocolInfo();
+  const protocolInfo: any = await getProtocolInfo(dev);
 
   let render_action = await uploadToPinata("./renderer/dist/main.js");
 
@@ -109,6 +111,7 @@ const main = async () => {
         publication,
         stream_id: STREAM_ID,
         publish: false,
+        dev,
       },
     });
 

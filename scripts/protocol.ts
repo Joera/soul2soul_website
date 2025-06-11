@@ -11,9 +11,11 @@ interface PKP {
   ethAddress: string;
 }
 
-export const getProtocolInfo = async () => {
+export const getProtocolInfo = async (dev: boolean) => {
   try {
-    const addr = await getContractAddress("--protocol.eth");
+    const ensName = dev ? "dev.--protocol.eth" : "--protocol.eth";
+
+    const addr = await getContractAddress(ensName);
 
     if (!addr || addr === "false") {
       return JSON.stringify({
